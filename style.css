@@ -14,7 +14,7 @@ h1 {
     background-color: white;
 
     color: black;
-    width: 400px;
+    width: 480px;
     padding: 20px;
 
     border: 2px solid black;
@@ -23,7 +23,14 @@ h1 {
 
     margin-left: auto;
     margin-right: auto;
+}
 
-
-    float: center;
+.childdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto:
+    
+    background-color: blue;
 }
