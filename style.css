@@ -17,7 +17,7 @@ h1 {
     width: 480px;
     padding: 20px;
 
-    border: 2px solid black;
+    border: solid black;
     border-radius: 25px;
 
 
@@ -25,12 +25,49 @@ h1 {
     margin-right: auto;
 }
 
-.childdiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto:
-    
-    background-color: blue;
+/* 
+Div that holds inputs/labels etc
+and places them in table-like order
+*/
+.main-form{
+    display: table;
+    /*background-color: blue;*/
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/*
+<p> tag inside the main-form div
+starts a new table row
+*/
+.main-form p{
+    display: table-row;
+    /*background-color: red;*/
+} 
+
+/*
+Each input/label is a separate cell
+in the table.
+*/
+label, 
+input, 
+.input,
+button{
+    display: table-cell;
+    /*background-color: yellow;*/
+    margin: 8px 0;
+
+}
+
+label {
+    padding-right: 20px;
+}
+
+/*
+Extra care for the "amount" input,
+where the cell contains the 
+<input> AS WELL AS the <span>
+*/
+.input input {
+    display: inline;
 }

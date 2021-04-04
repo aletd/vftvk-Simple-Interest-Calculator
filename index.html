@@ -9,35 +9,27 @@
 
     <body>
         <div class="maindiv">
+
             <h1>Simple Interest Calculator</h1>
-            <!---->
-            <div class="childdiv">
-
-                <table>
-                <tr>
-                    <td>
-                        <label for="principal"> Amount </label>
-                    </td>
-                    <td>
-                        <input type="range" min="1" max="20" step="0.25" value="10.25" id="principal"> 
-                        <span> 10.25 % </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="rate"> Rate </label>
-                    </td>
-                    <td>
-                        <input type="number"  id="rate">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="years">No. of Years</label>
-                    </td>
-                    <td>
-                        <select name="years" id="years">
+            
+            <!-- div that holds the content of any necessary inputs -->
+            <div class="main-form">
+                <!-- Principal Amount -->
+                <p>
+                    <label for="principal"> Amount </label>
+                    <span class="input"> 
+                        <input type="range" min="1" max="20" step="0.25" value="10.25" id="principal"> <span> 10.25 % </span> 
+                    </span>                    
+                </p>
+                <!-- Interest rate -->
+                <p>
+                    <label for="rate"> Rate </label>
+                    <input type="number"  id="rate" style="width: auto;">
+                </p>
+                <!-- No. of Years -->
+                <p>
+                    <label for="years">No. of Years</label>
+                    <select name="years" id="years">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -48,17 +40,19 @@
                             <option value="8">8</option>
                             <option value="9">9</option>
                             <option value="10">10</option>
-                        </select>
-                    </td>
-                </tr>
-            </table>
-
-            <button onclick="compute()">Compute Interest</button>
-
-            <span id="result"></span><br>
+                    </select>
+                </p>
+                <!-- Button that processes input data -->
+                <p>
+                    <button onclick="compute()">Compute Interest</button>
+                </p>
+                <!-- Span that holds the result string-->
+                <p>
+                    <span id="result"></span>
+                </p>
 
             </div>
-        
+
         <!-- Copyright -->
         <footer>
             &copy; Everyone Can Get Rich
