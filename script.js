@@ -42,10 +42,10 @@ function compute()
     var endYear = currentYear + years;
 
     // compose answer text
-    var result_text = 'If you deposit ' + principal + ',<br>';
-    result_text += 'at an interest rate of ' + rate + '%.<br>';
-    result_text += 'You will receive an amount of ' + interest +',<br>';
-    result_text += 'in the year ' + endYear + '<br>';
+    var result_text = 'If you deposit ' + '<mark>' +  principal +'</mark>' + ',<br>';
+    result_text += 'at an interest rate of ' + '<mark>' + rate + '%</mark>' +'.<br>';
+    result_text += 'You will receive an amount of ' + '<mark>' + interest + '</mark>' + ',<br>';
+    result_text += 'in the year ' + '<mark>' + endYear + '</mark>' + '<br>';
 
     // display answer
     document.getElementById('result').innerHTML = result_text;
