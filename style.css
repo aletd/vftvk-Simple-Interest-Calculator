@@ -35,6 +35,8 @@ and places them in table-like order
     margin: 0 auto;
     padding: 20px 0;
 
+    width: 360px;
+
 	border-spacing: 10px;
 	border-collapse: separate;
 }
@@ -45,7 +47,7 @@ starts a new table row
 */
 .main-form p{
     display: table-row;
-    background-color: red;
+    /*background-color: red;*/
 } 
 
 /*
@@ -75,5 +77,8 @@ where the cell contains the
 }
 
 #result{
-
+    display: block;
+    width: 360px;
+    /*margin-left: 70px;*/
+    margin: -30px auto 20px 70px;
 }
