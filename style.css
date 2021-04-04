@@ -34,6 +34,9 @@ and places them in table-like order
     /*background-color: blue;*/
     margin: 0 auto;
     padding: 20px 0;
+
+	border-spacing: 10px;
+	border-collapse: separate;
 }
 
 /*
