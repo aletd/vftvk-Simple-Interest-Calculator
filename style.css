@@ -45,7 +45,7 @@ starts a new table row
 */
 .main-form p{
     display: table-row;
-    /*background-color: red;*/
+    background-color: red;
 } 
 
 /*
@@ -72,4 +72,8 @@ where the cell contains the
 */
 .input input {
     display: inline;
+}
+
+#result{
+
 }
