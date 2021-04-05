@@ -25,56 +25,7 @@ h1 {
     margin-right: auto;
 }
 
-/* 
-Div that holds inputs/labels etc
-and places them in table-like order
-*/
-.main-form{
-    display: table;
-    /*background-color: blue;*/
-    margin: 0 auto;
-    padding: 20px 0;
 
-    width: 360px;
-
-	border-spacing: 10px;
-	border-collapse: separate;
-}
-
-/*
-<p> tag inside the main-form div
-starts a new table row
-*/
-.main-form p{
-    display: table-row;
-    /*background-color: red;*/
-} 
-
-/*
-Each input/label is a separate cell
-in the table.
-*/
-label, 
-input, 
-.input,
-button{
-    display: table-cell;
-    /*background-color: yellow;*/
-
-}
-
-label {
-    padding-right: 20px;
-}
-
-/*
-Extra care for the "amount" input,
-where the cell contains the 
-<input> AS WELL AS the <span>
-*/
-.input input {
-    display: inline;
-}
 
 #result{
     display: block;
@@ -82,3 +33,35 @@ where the cell contains the
     /*margin-left: 70px;*/
     margin: -30px auto 20px 70px;
 }
+
+.form-div{
+    background-color: red;
+
+    display: grid;
+    grid-template-columns: 120px 100px auto;
+    grid-template-rows: auto;
+
+    align-items: center;
+    text-align:center;
+}
+
+
+.label-item{
+    background-color:yellow;
+}
+
+#principal {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 160px;
+}
+
+/*
+.input-item{
+    width: 60px;
+}
+
+.slider-text{
+    width: 60px;
+    background-color: blue;
+}*/
