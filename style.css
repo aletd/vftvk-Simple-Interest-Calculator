@@ -50,11 +50,23 @@ h1 {
     background-color:yellow;
 }
 
+
 #principal {
     grid-column-start: 2;
     grid-column-end: 4;
     width: 160px;
 }
+
+#rate{
+    width:160px;
+}
+
+#years{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    width: 40px;
+}
+
 
 /*
 .input-item{
