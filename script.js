@@ -1,13 +1,4 @@
 /**
- * These variables hold the "id" values for the slider
- * input element, as well as the span element.
- * These will be used as selector variables to get
- * references to the elements.
- */
-var SLIDER_ID       = 'rate';
-var SLIDER_SPAN_ID  = 'slider-indication';
-
-/**
  * Function compute()
  * Inputs:
  * Outputs:
@@ -53,15 +44,33 @@ function compute()
     
 }
  
-
+/**
+ * Function update_slider_text()
+ * Inputs:
+ * Outputs:
+ * Description: when the function is activated,
+ * the current value of the input slider is obtained,
+ * and then it is displayed on the corresponding element
+ */
 function update_slider_text(){
     var slider_value = document.getElementById('rate').value
     var slider_text = slider_value + ' %';
     document.getElementById('slider-indication').textContent = slider_text;
-
 }
 
+/**
+ * Overriding onload() function
+ * Perform any additional setups via JavaScript here.
+ */
 window.onload = function(){
     console.log('Inside onload');
-    document.getElementById('rate').onchange = update_slider_text;
+    /**
+     * NOTE: The lab asks to hook are slider value update routine to
+     * the input's "onchange()" event.
+     * However, it seems more appropriate to actually use the "oninput()"
+     * event. See the differences here ("Definition and Usage" section):
+     * https://www.w3schools.com/jsref/event_oninput.asp
+     */
+    //document.getElementById('rate').onchange = update_slider_text;
+    document.getElementById('rate').oninput = update_slider_text;
 }
